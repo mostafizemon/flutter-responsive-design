@@ -72,46 +72,48 @@ class _MobileHomeState extends State<MobileHome> {
 
 
 
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            const Column(
-              children: [
-                SizedBox(height: 70,),
-                Text("FLUTTER WEB.\n THE BASICS",textAlign: TextAlign.center,style: TextStyle(
-                  fontWeight: FontWeight.w900,
-                  fontSize: 55,
-                  height: 1,
-                ),),
-
-              ],
-            ),
-            const SizedBox(height: 20,),
-            const Text("In this course we will go over tha basics of using Flutter Web for development. Topic will include Responsive Layout, Deploying, Font Changes, Hover functionality, Modals and more.",textAlign: TextAlign.center,style: TextStyle(
-              fontSize: 18,
-              height: 2
-            ),),
-
-            const SizedBox(height: 40,),
-
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)
-                )
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              const Column(
+                children: [
+                  SizedBox(height: 70,),
+                  Text("FLUTTER WEB.\n THE BASICS",textAlign: TextAlign.center,style: TextStyle(
+                    fontWeight: FontWeight.w900,
+                    fontSize: 55,
+                    height: 1,
+                  ),),
+        
+                ],
               ),
-                onPressed: (){},
-                child: const Text("Join Classes", style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
-                ),),
-            )
-
-          ],
-
+              const SizedBox(height: 20,),
+              const Text("In this course we will go over tha basics of using Flutter Web for development. Topic will include Responsive Layout, Deploying, Font Changes, Hover functionality, Modals and more.",textAlign: TextAlign.center,style: TextStyle(
+                fontSize: 18,
+                height: 2
+              ),),
+        
+              const SizedBox(height: 40,),
+        
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)
+                  )
+                ),
+                  onPressed: (){},
+                  child: const Text("Join Classes", style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18
+                  ),),
+              )
+        
+            ],
+        
+          ),
         ),
       ),
 
